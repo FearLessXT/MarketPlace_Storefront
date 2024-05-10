@@ -1,39 +1,75 @@
-<div class="relative">
-    <div
-        aria-hidden="true"
-        class="absolute inset-0 overflow-hidden"
-    >
-        <!--<div class="absolute inset-0 bg-gradient-to-br from-zinc-50 to-zinc-900 mix-blend-darken"></div>-->
-    </div>
-    <div
-        aria-hidden="true"
-        class="absolute inset-0 bg-gray-900 opacity-50"
-    ></div>
-    <div class="relative max-w-3xl mx-auto py-16 px-6 flex flex-col items-center text-center sm:pt-72 sm:pb-72 lg:px-0">
-        <div class="relative bg-zinc-800 bg-opacity-0 rounded-lg p-0">
-            <h1 class="text-6xl text-transparent bg-clip-text font-extrabold tracking-normal lg:text-6xl bg-gradient-to-r from-white to-gray-200">
-                Pi Pay <span class="text-[#aa2d2f] glow">MarketPlace</span>
-            </h1>
-        </div>
+<!DOCTYPE html>
+<html lang="en">
 
-        <div class="mt-4 text-2xl text-white">
-            <p>The Best Ecommerce Platform <span class="whitespace-nowrap">you can trusted with</span></p>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url('https://imgs.search.brave.com/rtEsLA3JTUFJCdmNxdGadDZVjdipv5Z32krfqqpfUJ4/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9nZXR3/YWxscGFwZXJzLmNv/bS93YWxscGFwZXIv/ZnVsbC85LzUvZi8y/NTQ0ODQuanBn');
+            background-size:cover;
+            background-position:center;
+            font-family: Arial, sans-serif;
+            /* Change the font family as needed */
+            color: black;
+            /* Set the default text color */
+            height:100vh;
+        }
 
-            <!-- <p>
-                <a href="https://www.vendure.io" class="text-blue-300 hover:text-blue-500">Pipay</a>
-                &
-                <a href="https://angular.io/" class="text-red-700 hover:text-red-500">Ecommerce</a>
-            </p> -->
+        .overlay {
+            position: relative;
+            top: inherit;
+            left: inherit;
+            width: inherit;
+            height: inherit;
+            background-color: rgba(0, 0, 0, 0.3);
+            /* Adjust the opacity here (0.5 is 50% opacity) */
+        }
+
+        .content {
+            /* Add styles for your content here */
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Add any other custom styles for your content */
+    </style>
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="content">
+            <!-- Your existing content here -->
+
+            <div
+                class="relative max-w-3xl mx-auto py-16 px-6 flex flex-col items-center text-center sm:pt-72 sm:pb-72 lg:px-0">
+                <div class="relative rounded-lg p-0">
+                    <h1
+                        class="text-6xl text-transparent bg-clip-text font-extrabold tracking-normal lg:text-6xl bg-gradient-to-r from-gray-100 to-gray-200">
+                        Welcome to MarketPlace
+                    </h1>
+                </div>
+
+                <div class="mt-4 text-2xl text-white">
+                    <p>Experience the World of Infinite Possibilities.</p>
+                </div>
+            </div>
+
+            <div class="max-w-6xl mx-auto px-4 pt-12">
+                <div class="box-content py-2 px-2 relative overflow-x-auto xl:overflow-visible">
+                    <div
+                        class="grid justify-items-center grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-8 sm:px-6 lg:px-8 xl:relative xl:px-0 xl:space-x-0 xl:gap-x-8">
+                        <!-- Add your collection card component or content here -->
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<div class="max-w-6xl mx-auto px-4 pt-12">
-    <div class="box-content py-2 px-2 relative overflow-x-auto xl:overflow-visible">
-        <div
-            class="grid justify-items-center grid-cols-2 md:grid-cols-3 gap-y-8 gap-x-8 sm:px-6 lg:px-8 xl:relative xl:px-0 xl:space-x-0 xl:gap-x-8">
-            <vsf-collection-card *ngFor="let collection of collections$ | async"
-                                 [collection]="collection">
-            </vsf-collection-card>
-        </div>
-    </div>
-</div>
+</body>
+
+</html>
