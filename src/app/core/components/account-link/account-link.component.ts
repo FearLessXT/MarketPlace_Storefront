@@ -10,7 +10,7 @@ import { StateService } from '../../providers/state/state.service';
 @Component({
     selector: 'vsf-account-link',
     templateUrl: './account-link.component.html',
-    // styleUrls: ['./account-link.component.scss'],
+     styleUrls: ['./account-link.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AccountLinkComponent implements OnInit {

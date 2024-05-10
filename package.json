@@ -43,7 +43,7 @@
     "graphql": "^16.6.0",
     "photoswipe": "^5.3.4",
     "rxjs": "~6.6.3",
-    "tslib": "^2.4.0",
+    "tslib": "^2.6.2",
     "zone.js": "~0.13.0"
   },
   "devDependencies": {

@@ -26,14 +26,7 @@ export class HomePageComponent implements OnInit {
         this.collections$ = this.dataService.query<GetCollectionsQuery>(GET_COLLECTIONS, {
             options: { take: 50 },
         }).pipe(map(({collections}) => collections.items));
-        this.heroImage = this.getHeroImageUrl();
     }
-
-    private getHeroImageUrl(): string {
-        const {apiHost, apiPort} = environment;
-        return `${apiHost}:${apiPort}/assets/preview/a2/thomas-serer-420833-unsplash__preview.jpg`;
-    }
-
 }
 
 const GET_COLLECTIONS = gql`

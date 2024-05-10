@@ -31,11 +31,11 @@
                class="font-medium text-primary-600 hover:text-primary-500">Forgot your password?</a>
         </div>
     </div>
-        <button type="submit"
+        <!-- <button type="submit"
                 [disabled]="signInForm.invalid || signInForm.pristine"
                 class="w-full btn-primary">
             Sign in
-        </button>
+        </button> -->
     <div *ngIf="displayRegisterLink" class="text-sm font-medium text-primary-600 hover:text-primary-500 mx-auto">
         <a [routerLink]="['/account/register']">No account? Register here</a>
     </div>
